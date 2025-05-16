@@ -1,0 +1,12 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc -p tsconfig.json && node ../dist/example/index.js"
+  },
+  "dependencies": {
+    "package-a": "1.0.0",
+    "package-b": "1.0.0"
+  }
+}

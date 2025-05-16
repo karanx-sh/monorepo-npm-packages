@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.json", // Ensure inheritance of paths
+  "compilerOptions": {
+    "composite": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "emitDeclarationOnly": false, // Ensure JavaScript files are emitted
+    "tsBuildInfoFile": "dist/package-b.tsbuildinfo"
+  },
+  "include": ["src"],
+  "references": [
+    { "path": "../package-a" } // Ensure this reference exists
+  ]
+}

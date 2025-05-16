@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "strict": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "target": "ESNext",
+    "outDir": "./dist",
+    "rootDir": "./",
+    "baseUrl": ".",
+    "paths": {
+      "package-a": ["packages/package-a/dist"],
+      "package-b": ["packages/package-b/dist"],
+      "*": ["node_modules/*"]
+    }
+  },
+  "include": ["packages/*/src/**/*", "src/**/*"],
+  "exclude": ["node_modules", "dist"],
+  "files": [],
+  "references": [
+    { "path": "./packages/package-a" },
+    { "path": "./packages/package-b" }
+  ]
+}

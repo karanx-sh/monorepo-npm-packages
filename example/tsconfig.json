@@ -1,0 +1,14 @@
+{
+  "extends": "../tsconfig.json", // Ensure inheritance of paths
+  "compilerOptions": {
+    "composite": true,
+    "outDir": "../dist/example",
+    "rootDir": "./",
+    "tsBuildInfoFile": "../dist/example/tsconfig.tsbuildinfo"
+  },
+  "include": ["./**/*"],
+  "references": [
+    { "path": "../packages/package-a" },
+    { "path": "../packages/package-b" }
+  ]
+}

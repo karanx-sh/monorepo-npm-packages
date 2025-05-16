@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "outDir": "dist",
+    "rootDir": "src",
+        "emitDeclarationOnly": false, // Ensure JavaScript files are emitted
+    "tsBuildInfoFile": "dist/package-b.tsbuildinfo"
+  },
+  "include": ["src"]
+}
